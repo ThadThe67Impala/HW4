@@ -1,0 +1,21 @@
+
+Why Our Interpretation is More Efficiant: 
+
+
+.global f 
+
+factorial
+
+bx lr r0 
+we know we wanta multiply command (mul) 
+know we wanna store all of that in r0 
+take from r1 and r2 
+
+mul r0, r1, r2
+
+where is input number stored? 
+first input parameter is inside register 0 
+
+wanna have a loop 
+	while (counter > 1)
+	(counter should start at input value)
