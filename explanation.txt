@@ -2,6 +2,13 @@
 Why Our Interpretation is More Efficiant: 
 
 
+To code our remake of the factorial function our group first looked at the assembly code of the factorial_inefficient function that was waready given. We tried to think of ways in which we could streamline the function to include less registers and thus less memory. However, after a class discussion we decided to simply code the assembly function from scratch and start our own file. 
+
+Our goal was to 
+
+
+
+A lil Notas: 
 .global f 
 
 factorial
