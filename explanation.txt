@@ -14,8 +14,9 @@ take from r1 and r2
 mul r0, r1, r2
 
 where is input number stored? 
-first input parameter is inside register 0 
+first input parameter is inside register 
 
-wanna have a loop 
-	while (counter > 1)
-	(counter should start at input value)
+use a loop while(counter>1) 
+	result = result*counter 
+
+will use subtract command to figure out what next thing we multiply is 
