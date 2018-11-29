@@ -1,24 +1,24 @@
-
-	.global f
-f:
+	.file "fac.c"
+	.text
+	.align 2
+	.global factorial
+	.syntax unified
+	.arm
+	.fpu vfp
+	.type factorial, %function
+factorial:
+	mov 	r2, r0
 .loop:	
-	
 	cmp 	r2, #1
 	ITTT	NE	
 	subNE	r2, r2, #1
 	mulNE 	r0, r2	
-	bNE	.loop
-	b	.over	
+	bNE	.loop	
+	bx 	lr
+	//.global main
+//main:
 
-	.global main
-main:
 	
-	mov	r0, #5
-	mov	r2, r0
-	
-	cmp 	r2, #1
-	bNE	f
-.over: 
-	mov 	r0, r0
-	bx	lr	
+//	cmp 	r2, #1
+//	bNE	f 	
 

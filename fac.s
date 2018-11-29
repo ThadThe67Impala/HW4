@@ -61,7 +61,7 @@ main:
 	push	{fp, lr}
 	add	fp, sp, #4
 	mov	r0, #5
-	bl	factorial_inefficient
+	bl	factorial
 	mov	r3, r0
 	mov	r0, r3
 	pop	{fp, pc}

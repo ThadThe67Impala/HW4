@@ -10,5 +10,5 @@ int factorial_inefficient(int n){
 }
 
 int main(){
-	return factorial_inefficient(5);
+	return factorial(5);
 }
