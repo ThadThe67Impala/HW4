@@ -1,29 +1,7 @@
 
-Why Our Interpretation is More Efficiant: 
+Why Our Interpretation is More Efficient: 
 
 
-To code our remake of the factorial function our group first looked at the assembly code of the factorial_inefficient function that was waready given. We tried to think of ways in which we could streamline the function to include less registers and thus less memory. However, after a class discussion we decided to simply code the assembly function from scratch and start our own file. 
+	To code our remake of the factorial function our group first looked at the assembly code of the factorial_inefficient function that was already given. We tried to think of ways in which we could streamline the function to include less registers and thus less memory. However, after a class discussion we decided to simply code the assembly function from scratch and start our own file. 
 
-Our goal was to 
-
-
-
-A lil Notas: 
-.global f 
-
-factorial
-
-bx lr r0 
-we know we wanta multiply command (mul) 
-know we wanna store all of that in r0 
-take from r1 and r2 
-
-mul r0, r1, r2
-
-where is input number stored? 
-first input parameter is inside register 
-
-use a loop while(counter>1) 
-	result = result*counter 
-
-will use subtract command to figure out what next thing we multiply is 
+	We started by creating a main method which calls a separate f function that actually implements the factorial for our input number. This implementation is more efficiant because not only does it use less registers (we only use two) but it also doesn't allocate any memory on the stack. Therefore it uses less computer memory and is a more efficient function. 
